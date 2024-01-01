@@ -9,22 +9,7 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
 fi
 
 ln -sf "$DOTFILES"/zsh/zshrc "$HOME"/.zshrc
-ln -sf "$DOTFILES"/vim/vimrc "$HOME"/.vimrc
-ln -sf "$DOTFILES"/vim/gvimrc "$HOME"/.gvimrc
-ln -sf "$DOTFILES"/idea/ideavimrc "$HOME"/.ideavimrc
-ln -sf "$DOTFILES"/tmux/tmux.conf "$HOME"/.tmux.conf
 
-rm -rf "$HOME"/.config/kitty
-ln -sf "$DOTFILES"/kitty "$HOME"/.config/kitty
 
-rm -rf "$HOME"/.config/lvim
-ln -sf "$DOTFILES"/lvim "$HOME"/.config/lvim
-
-#ln -sf "$DOTFILES"/git/gitconfig "$HOME"/.gitconfig
-#ln -sf "$DOTFILES"/git/gitignore_global "$HOME"/.gitignore_global
-
-rm -rf "$HOME"/.config/karabiner
-ln -sf "$DOTFILES"/karabiner "$HOME"/.config/karabiner
-
-mkdir -p "$HOME"/.nvm
-ln -sf "$DOTFILES"/nvm/default-packages "$HOME"/.nvm/default-packages
+# mkdir -p "$HOME"/.nvm
+# ln -sf "$DOTFILES"/nvm/default-packages "$HOME"/.nvm/default-packages
